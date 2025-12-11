@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  /* --default-font-family: var(--font-lexend);
+  --font-sans: var(--default-font-family);
+  --font-mono: var(--default-font-family); */
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend";
+}
+/*Texts*/
+p {
+  @apply text-base;
+}
+h1 {
+  @apply text-4xl;
+}
+h2 {
+  @apply text-3xl;
+}
+h3 {
+  @apply text-3xl;
+}
+h4 {
+  @apply font-semibold text-2xl;
+}
+h5 {
+  @apply font-semibold text-xl;
+}
+h6 {
+  @apply font-semibold text-lg;
+}
+/*Header*/
+.nav-link {
+ @apply text-sm block text-gray-900 hover:text-indigo-500  hover:font-bold hover:underline
+}
+.nav-link.popover-link {
+  @apply  font-medium 
+}
+.nav-link.dialog-link {
+  @apply -mx-3  rounded-lg px-3 py-2 uppercase font-semibold 
+}
+/*Button*/
+.btn {
+  @apply px-4 py-2 text-base font-semibold rounded-lg;
+}
+
+.btn-primary {
+  @apply bg-indigo-500;
+}
+.btn-secondary {
+  @apply bg-teal-500;
+}
+
+.outlined {
+  @apply border-solid border-2 bg-transparent;
+}
+.btn-primary.outlined {
+  @apply border-indigo-500  text-indigo-500;
+}
+.btn-secondary.outlined {
+  @apply border-teal-500 text-teal-500;
+}
+/*Card*/
