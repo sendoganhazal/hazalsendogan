@@ -122,7 +122,7 @@ const skills = [
 function Skills() {
   return (
     <section className='skills-section'>
-      <div className='skills-container'>
+      <div className='container'>
         <h2>Skills</h2>
         <div className="grid-view">
           {skills.map((skill) => (

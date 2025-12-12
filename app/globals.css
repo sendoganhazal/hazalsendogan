@@ -142,13 +142,13 @@ h6 {
 .skills-section {
   @apply bg-[#f7fafa] py-16 px-6;
 }
-.skills-container {
+.container {
   @apply h-screen mx-auto max-w-7xl flex flex-col justify-center items-center;
 }
 .skills-section h2 {
   @apply text-indigo-500 font-bold mb-8 text-center;
 }
-.skills-container .grid-view {
+.skills-section .grid-view {
   @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4
 }
 
@@ -159,4 +159,25 @@ h6 {
 /*Services*/
 .services-section {
   @apply bg-[#ebf5f5] px-6 py-16
+}
+
+.services-section h2 {
+  @apply font-bold mb-10 text-center text-teal-900
+} 
+
+.services-card {
+ @apply p-8 rounded-3xl bg-white backdrop-blur-xl shadow-xl border border-white
+}
+
+.services-card .card-header {
+@apply flex items-center gap-3 mb-4
+}
+.services-card .title {
+  @apply text-xl font-semibold
+}
+.services-card .text {
+  @apply text-sm opacity-80 leading-relaxed
+}
+.services-section .grid-view {
+  @apply grid sm:grid-cols-2 lg:grid-cols-3 gap-8
 }
