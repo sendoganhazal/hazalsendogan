@@ -17,11 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${lexend}`}
-      >
+      <body className="h-screen">
         <Header/>
-        {children}
+        <main>
+          {children}
+        </main>
       </body>
     </html>
   );

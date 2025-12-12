@@ -1,10 +1,12 @@
-import Button from "@/components/buttons/Button";
-import Image from "next/image";
+
+import Hero from "@/components/homepage/Hero";
+import Skills from "@/components/homepage/Skills";
 
 export default function Home() {
   return (
-    <div>
-
-    </div>
+    <>
+     <Hero/>
+     <Skills/>
+    </>
   );
 }

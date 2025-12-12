@@ -34,58 +34,58 @@ h6 {
 }
 /*Header*/
 .header {
- @apply bg-zinc-50
+  @apply bg-[#a9d9d0] fixed left-0 right-0 top-0 z-99;
 }
 .navbar {
-  @apply mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8
+  @apply mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8;
 }
 .navbar-brand-lg {
-  @apply flex lg:flex-1
+  @apply flex lg:flex-1;
 }
 .navbar-logo {
-  @apply h-8 w-auto
+  @apply h-8 w-auto;
 }
 .mobile-menu-wrapper {
-  @apply flex lg:hidden
+  @apply flex lg:hidden;
 }
 .mobile-menu-btn {
-  @apply -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700
+  @apply -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700;
 }
 .popover-group {
-  @apply hidden lg:flex lg:gap-x-12
+  @apply hidden lg:flex lg:gap-x-12;
 }
 .dialog {
-  @apply lg:hidden
+  @apply lg:hidden;
 }
 .dialog-panel {
-  @apply fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-sky-50 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10
+  @apply fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-sky-50 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10;
 }
 .dialog-header {
-  @apply flex items-center justify-between
+  @apply flex items-center justify-between;
 }
 .dialog-logo {
-  @apply h-8 w-auto
+  @apply h-8 w-auto;
 }
 .dialog-nav-root {
-  @apply mt-6 flow-root
+  @apply mt-6 flow-root;
 }
 .dialog-nav-divide {
- @apply -my-6 divide-y divide-gray-500/10
+  @apply -my-6 divide-y divide-gray-500/10;
 }
 .dialog-nav {
-  @apply space-y-2 py-6
+  @apply space-y-2 py-6;
 }
 .nav-link {
- @apply text-sm block text-gray-900 hover:text-indigo-500  hover:font-bold hover:underline
+  @apply text-sm block text-gray-900 hover:text-indigo-500  hover:font-bold hover:underline;
 }
 .nav-link.popover-link {
-  @apply  font-medium 
+  @apply font-medium;
 }
 .nav-link.dialog-link {
-  @apply -mx-3  rounded-lg px-3 py-2 uppercase font-semibold 
+  @apply -mx-3  rounded-lg px-3 py-2 uppercase font-semibold;
 }
 .dialog-close-btn {
-  @apply -m-2.5 rounded-md p-2.5 text-gray-700
+  @apply -m-2.5 rounded-md p-2.5 text-gray-700;
 }
 /*Button*/
 .btn {
@@ -108,4 +108,55 @@ h6 {
 .btn-secondary.outlined {
   @apply border-teal-500 text-teal-500;
 }
-/*Card*/
+/*Hero*/
+.hero-section {
+  @apply bg-[#a9d9d040];
+}
+.hero-content-wrapper {
+  @apply h-screen mx-auto max-w-7xl p-6 grid grid-cols-4 grid-flow-col grid-rows-4 gap-4;
+}
+
+.hero-content {
+  @apply col-span-2 row-start-2 row-span-3;
+}
+
+.hero-content h1 {
+  @apply text-indigo-700;
+}
+.hero-content h2 {
+  @apply text-teal-900 my-3;
+}
+.hero-content p {
+  @apply text-gray-700 leading-relaxed;
+}
+
+.hero-image {
+  grid-area: 2 / 3 / 4 / 5;
+  background-image: url("../assets/illustration_608x445.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+/* Skills*/
+.skills-section {
+  @apply bg-[#f7fafa] py-16 px-6;
+}
+.skills-container {
+  @apply h-screen mx-auto max-w-7xl flex flex-col justify-center items-center;
+}
+.skills-section h2 {
+  @apply text-indigo-500 font-bold mb-8 text-center;
+}
+.skills-container .grid-view {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4
+}
+
+.skills-card {
+  @apply rounded-3xl p-4 backdrop-blur-md shadow-md border text-center text-sm font-medium cursor-default  bg-white border-white/20
+}
+
+/*Services*/
+.services-section {
+  @apply bg-[#ebf5f5] px-6 py-16
+}
