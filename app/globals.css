@@ -87,6 +87,13 @@ h6 {
 .dialog-close-btn {
   @apply -m-2.5 rounded-md p-2.5 text-gray-700;
 }
+/*Footer*/
+.footer {
+  @apply bg-indigo-900 flex justify-center p-6 
+}
+.footer p {
+  @apply text-white text-sm font-medium
+}
 /*Button*/
 .btn {
   @apply px-4 py-2 text-base font-semibold rounded-lg;
