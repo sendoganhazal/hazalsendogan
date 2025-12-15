@@ -208,15 +208,21 @@ h6 {
 
 /*Services*/
 .services-section {
-  @apply bg-[#ebf5f5] px-6 py-16;
+  @apply bg-[#F1F5F9] px-6 py-16;
+    color: var(--color-primary);
 }
 
 .services-section h2 {
-  @apply font-bold mb-10 text-center text-teal-900;
+  @apply font-bold mb-10 text-center;
 }
 
 .services-card {
-  @apply p-8 rounded-3xl bg-white backdrop-blur-xl shadow-xl border border-white;
+  @apply p-8 rounded-3xl bg-[#FFFFFF] backdrop-blur-xl shadow-xl;
+  color: var(--color-primary-soft);
+}
+.services-card:hover {
+  color: var(--color-primary-soft);
+  background-color: #EEF2FF;
 }
 
 .services-card .card-header {
@@ -226,7 +232,8 @@ h6 {
   @apply text-xl font-semibold;
 }
 .services-card .text {
-  @apply text-sm opacity-80 leading-relaxed;
+  @apply text-sm leading-relaxed;
+  color: var(--text-secondary);
 }
 .services-section .grid-view {
   @apply grid sm:grid-cols-2 lg:grid-cols-3 gap-8;
