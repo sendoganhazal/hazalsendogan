@@ -175,20 +175,21 @@ h6 {
 }
 /* Skills*/
 .skills-section {
-  @apply bg-[#f7fafa] py-16 px-6;
+  @apply bg-[#FFFFFF] py-16 px-6;
 }
 .container {
   @apply lg:h-screen mx-auto max-w-7xl flex flex-col justify-center items-center;
 }
 .skills-section h2 {
-  @apply text-indigo-500 font-bold mb-8 text-center;
+  @apply text-[#4F46E5] font-bold mb-8 text-center;
 }
 .skills-section .grid-view {
   @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4;
 }
 
 .skills-card {
-  @apply rounded-3xl p-4 backdrop-blur-md shadow-md border text-center text-sm font-medium cursor-default  bg-white border-white/20;
+  @apply rounded-3xl p-4 backdrop-blur-md shadow-md border text-center text-sm font-medium cursor-default  bg-[#F8FAFC] hover:bg-[#EEF2FF] border-[#E2E8F0];
+  color: var(--text-primary)
 }
 
 /*Services*/
