@@ -132,7 +132,7 @@ h6 {
   @apply bg-[#F8FAFC] bg-gradient-to-br from-[#F8FAFC] to-[#EEF2FF];
 }
 .hero-content-wrapper {
-  @apply lg:h-screen mx-auto max-w-7xl p-6 grid grid-cols-2 grid-rows-2 lg:grid-cols-4 grid-flow-col lg:grid-rows-4 gap-2 lg:gap-4;
+  @apply lg:h-screen mx-auto max-w-7xl p-6 grid grid-cols-2 grid-rows-2 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 grid-flow-col lg:grid-rows-4 gap-2 lg:gap-4;
 }
 
 .hero-content {
@@ -160,6 +160,20 @@ h6 {
   border-radius: 10px;
 }
 @media (max-width:767.98px) {
+  .hero-content-wrapper {
+    padding-top: 100px;
+    padding-bottom: 75px;
+  }
+  .hero-image {
+    grid-area: 1 / 1 / 2 / 3;
+    
+   
+  }
+  .hero-content {
+     margin-top: 2rem;
+  }
+}
+@media (min-width:768px) and (max-width:1023.98px) {
   .hero-content-wrapper {
     padding-top: 100px;
     padding-bottom: 75px;
