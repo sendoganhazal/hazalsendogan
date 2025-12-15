@@ -101,10 +101,10 @@ h6 {
 
 /*Footer*/
 .footer {
-  @apply bg-indigo-900 flex justify-center p-6;
+  @apply bg-[#0F172A] flex justify-center p-6;
 }
 .footer p {
-  @apply text-white text-sm font-medium;
+  @apply text-[#CBD5E1] text-sm font-medium;
 }
 /*Button*/
 .btn {
