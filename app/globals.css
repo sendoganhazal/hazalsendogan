@@ -1,9 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  /* --default-font-family: var(--font-lexend);
-  --font-sans: var(--default-font-family);
-  --font-mono: var(--default-font-family); */
+  --color-primary: #4f46e5;
+  --color-primary-soft: #6366f1;
+  --color-primary-ultra-soft: #eef2ff;
+  --bg-main: #f8fafc;
+  --bg-section-alternate: #ffffff;
+  --bg-card: #ffffff;
+  --bg-section-muted: #f1f5f9;
+  --bg-footer: #0f172a;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-footer: #cbd5e1;
+  --border-soft: #e2e8f0;
+  --border-subtle: #cbd5e1;
+  --bg-glass: rgba(255, 255, 255, 0.6);
 }
 body {
   margin: 0;
@@ -34,12 +46,28 @@ h6 {
 }
 /*Header*/
 .header {
-  @apply bg-[#a9d9d0] fixed left-0 right-0 top-0 z-99;
+  @apply fixed left-0 right-0 top-0 z-99;
+  background-color: #f8fafc;
 }
 .navbar {
-  @apply mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8;
+  @apply mx-auto flex max-w-7xl items-center justify-between lg:px-8;
 }
-.navbar-brand-lg {
+.nav-list {
+  @apply hidden lg:flex lg:items-center;
+}
+.nav-list-item {
+  @apply p-2;
+}
+.nav-link {
+  @apply text-base font-medium block;
+  color: #0f172a;
+}
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus {
+  color: #4f46e5;
+}
+.navbar-brand {
   @apply flex lg:flex-1;
 }
 .navbar-logo {
@@ -48,51 +76,35 @@ h6 {
 .mobile-menu-wrapper {
   @apply flex lg:hidden;
 }
-.mobile-menu-btn {
-  @apply -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700;
+.mobile-menu-btn,
+.close-btn {
+  @apply inline-flex items-center justify-center rounded-md p-2.5;
 }
-.popover-group {
-  @apply hidden lg:flex lg:gap-x-12;
+.close-btn svg {
+  width: 24px;
+  height: 24px;
 }
-.dialog {
-  @apply lg:hidden;
+.mobile-menu-header {
+  @apply mx-auto flex max-w-7xl items-center justify-between p-2.5;
 }
-.dialog-panel {
-  @apply fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-sky-50 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10;
+.mobile-menu-wrapper .mobile-nav {
+  @apply fixed top-0 left-0 min-h-screen w-full shadow-lg transform transition-transform duration-300 ease-in-out lg:hidden z-50;
+  background-color: #f8fafc;
 }
-.dialog-header {
-  @apply flex items-center justify-between;
+.mobile-menu-wrapper .nav-list {
+  @apply flex flex-col lg:hidden;
+  padding: 1.25rem;
 }
-.dialog-logo {
-  @apply h-8 w-auto;
+.mobile-menu-wrapper .nav-list-item {
+  border-bottom: 1px solid #e2e8f0;
 }
-.dialog-nav-root {
-  @apply mt-6 flow-root;
-}
-.dialog-nav-divide {
-  @apply -my-6 divide-y divide-gray-500/10;
-}
-.dialog-nav {
-  @apply space-y-2 py-6;
-}
-.nav-link {
-  @apply text-sm block text-gray-900 hover:text-indigo-500  hover:font-bold hover:underline;
-}
-.nav-link.popover-link {
-  @apply font-medium;
-}
-.nav-link.dialog-link {
-  @apply -mx-3  rounded-lg px-3 py-2 uppercase font-semibold;
-}
-.dialog-close-btn {
-  @apply -m-2.5 rounded-md p-2.5 text-gray-700;
-}
+
 /*Footer*/
 .footer {
-  @apply bg-indigo-900 flex justify-center p-6 
+  @apply bg-indigo-900 flex justify-center p-6;
 }
 .footer p {
-  @apply text-white text-sm font-medium
+  @apply text-white text-sm font-medium;
 }
 /*Button*/
 .btn {
@@ -156,35 +168,35 @@ h6 {
   @apply text-indigo-500 font-bold mb-8 text-center;
 }
 .skills-section .grid-view {
-  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4;
 }
 
 .skills-card {
-  @apply rounded-3xl p-4 backdrop-blur-md shadow-md border text-center text-sm font-medium cursor-default  bg-white border-white/20
+  @apply rounded-3xl p-4 backdrop-blur-md shadow-md border text-center text-sm font-medium cursor-default  bg-white border-white/20;
 }
 
 /*Services*/
 .services-section {
-  @apply bg-[#ebf5f5] px-6 py-16
+  @apply bg-[#ebf5f5] px-6 py-16;
 }
 
 .services-section h2 {
-  @apply font-bold mb-10 text-center text-teal-900
-} 
+  @apply font-bold mb-10 text-center text-teal-900;
+}
 
 .services-card {
- @apply p-8 rounded-3xl bg-white backdrop-blur-xl shadow-xl border border-white
+  @apply p-8 rounded-3xl bg-white backdrop-blur-xl shadow-xl border border-white;
 }
 
 .services-card .card-header {
-@apply flex items-center gap-3 mb-4
+  @apply flex items-center gap-3 mb-4;
 }
 .services-card .title {
-  @apply text-xl font-semibold
+  @apply text-xl font-semibold;
 }
 .services-card .text {
-  @apply text-sm opacity-80 leading-relaxed
+  @apply text-sm opacity-80 leading-relaxed;
 }
 .services-section .grid-view {
-  @apply grid sm:grid-cols-2 lg:grid-cols-3 gap-8
+  @apply grid sm:grid-cols-2 lg:grid-cols-3 gap-8;
 }
