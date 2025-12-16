@@ -21,6 +21,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Lexend";
+  background-color: var(--bg-main)
 }
 /*Texts*/
 p {
@@ -33,16 +34,16 @@ h2 {
   @apply text-3xl;
 }
 h3 {
-  @apply text-3xl;
+  @apply text-2xl;
 }
 h4 {
-  @apply font-semibold text-2xl;
-}
-h5 {
   @apply font-semibold text-xl;
 }
-h6 {
+h5 {
   @apply font-semibold text-lg;
+}
+h6 {
+  @apply font-semibold text-base;
 }
 /*Header*/
 .header {
@@ -238,3 +239,58 @@ h6 {
 .services-section .grid-view {
   @apply grid sm:grid-cols-2 lg:grid-cols-3 gap-8;
 }
+
+/*inner pages*/
+
+.page-header {
+ @apply bg-[#F8FAFC] bg-gradient-to-br from-[#F8FAFC] to-[#EEF2FF] px-6;
+}
+
+.page-header-content {
+  @apply mx-auto max-w-7xl flex items-center justify-center pt-20 pb-1;
+  height: 25vh;
+}
+
+.page-header h1 {
+  color: var(--color-primary);
+}
+
+.container.inner {
+  @apply items-start justify-start py-30 h-auto
+}
+.container.inner .section {
+  @apply p-6
+}
+.section-title {
+  color: var(--color-primary-soft);
+}
+.experiences-list {
+  @apply md:mx-6
+}
+.experiences-list-item {
+  @apply my-16
+}
+.experiences-list-item .work {
+  @apply flex flex-row items-center
+}
+
+.experiences-list-item h3 {
+  @apply ml-2;
+  color: var(--text-primary);
+}
+.experiences-list-item .job-title {
+  @apply font-semibold text-lg;
+  color: var(--text-secondary);
+}
+.experiences-list-item .time {
+  @apply font-medium text-sm;
+  color: var(--text-muted);
+}
+
+.experiences-list-item .description {
+   @apply  leading-relaxed;
+}
+.experience-sublist {
+  @apply border-l-4 border-dashed border-[#E2E8F0] ml-5 md:ml-15 p-6 
+}
+

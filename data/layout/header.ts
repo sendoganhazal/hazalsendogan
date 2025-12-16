@@ -7,8 +7,8 @@ export const headerData = {
         },
         {
             id: 1,
-            label:"Education & Experiences",
-            slug: "education-experience"
+            label:"Experiences & Education",
+            slug: "experience-education"
         },
         {
             id: 2,
