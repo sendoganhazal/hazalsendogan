@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "heroKicker":"Hazal Sendogan — Istanbul, Turkey",
+    "heroRole":"Frontend Developer, 8 years in — now stretching into full-stack with .NET Core.",
+    "heroLead":"I build fast, dependable web applications with React, Next.js, and TypeScript. Most of my career has lived at the intersection of fintech, real estate, and enterprise tooling, where 'it looks nice' isn't enough — it also has to hold up.",
+    "heroActions":[
+        {
+            "name":"See the work →",
+            "url":"projects",
+            "class":"btn btn-primary"
+        },
+        {
+            "name":"Get in touch",
+            "url":"'contacts",
+            "class":"btn btn-ghost"
+        }
+    ],
+    "noteCol": [
+        "also true about me:",
+        "— cat person (dog person too)",
+        "— Fenerbahçe, through it all",
+        "— teaching myself to draw",
+        "— been obsessed with tech since I was a kid"
+    ]
+  },
+  "findMore":{
+    "eyebrow":"Find out more",
+    "teasers":[
+        {
+            "cardActionUrl":"/about",
+            "cardEyebrow":"01",
+            "cardTitle":"About",
+            "cardBody":"Econometrics, a decade-long detour into frontend, and why I'm now going full-stack.",
+            "cardActionsName":"Read more →"
+        },
+        {
+            "cardActionUrl":"/experience",
+            "cardEyebrow":"02",
+            "cardTitle":"Experience",
+            "cardBody":"8 years, 5 projects, teams of 3 to 10 — from fintech to aerospace tooling..",
+            "cardActionsName":"See the timeline →"
+        },
+        {
+            "cardActionUrl":"/projects",
+            "cardEyebrow":"03",
+            "cardTitle":"Projects",
+            "cardBody":"Epara.app, Dora e Pare, and the internal tools I've helped build.",
+            "cardActionsName":"Browse projects →"
+        }
+    ]
+  }
+}

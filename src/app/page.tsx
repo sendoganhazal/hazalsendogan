@@ -1,9 +1,12 @@
 // import Image from "next/image";
+import HomeContainer from "@/components/organisms/home/HomeContainer";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Hazal Sendogan</h1>
-    </div>
+    <>
+      <HomeContainer>
+      </HomeContainer>
+
+    </>
   );
 }
