@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
+import hdata from "../lib/data/header.json"
+import Header from "@/components/organisms/header/Header";
 
 const lexend = Lexend({
   variable: "--font-lexend",
@@ -16,6 +18,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={lexend.variable}>
       <body>
+        <Header data={hdata.header}/>
         <main>
           {children}
         </main>
