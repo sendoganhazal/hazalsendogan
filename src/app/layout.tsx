@@ -3,6 +3,7 @@ import { Lexend } from "next/font/google";
 import "./globals.css";
 import hdata from "../lib/data/header.json"
 import Header from "@/components/organisms/header/Header";
+import Footer from "@/components/organisms/footer/Footer";
 
 const lexend = Lexend({
   variable: "--font-lexend",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main>
           {children}
         </main>
+        <Footer/>
       </body>
     </html>
   );

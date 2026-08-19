@@ -33,8 +33,6 @@ const HomeHero = ({ data }: HeroProps) => {
                 <Link key={index} className={action.class} href={action.url}>{action.name}</Link>
               ))
             }
-            <a className="btn " href="projects.html"></a>
-            <a className="btn btn-ghost" href="contact.html"></a>
           </div>
         </div>
         <div className="hero-note-col">
