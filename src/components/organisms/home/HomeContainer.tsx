@@ -5,10 +5,10 @@ import homepage from "../../../lib/data/homepage.json"
 
 const HomeContainer = () => {
     return (
-        <>
+        <div className='container'>
             <HomeHero data={homepage.hero} />
             <FindOutMore data={homepage.findMore}/>
-        </>
+        </div>
     )
 }
 
