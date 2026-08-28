@@ -46,7 +46,8 @@ h3 {
   margin: 0;
   letter-spacing: -0.01em;
 }
-ul, li {
+ul,
+li {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -290,7 +291,7 @@ nav .wrap {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
   }
-    .hero-inner {
+  .hero-inner {
     grid-template-columns: 1fr;
   }
   .hero-note-col {
@@ -313,7 +314,7 @@ nav .wrap {
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-   .hero-inner {
+  .hero-inner {
     grid-template-columns: repeat(6, 1fr);
     gap: 15px;
   }
@@ -328,7 +329,7 @@ nav .wrap {
   .container {
     width: 1120px;
   }
-     .hero-inner {
+  .hero-inner {
     grid-template-columns: repeat(8, 1fr);
     gap: 15px;
   }
@@ -342,9 +343,7 @@ nav .wrap {
 
 /* ABOUT */
 .about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 56px;
+  height: 50vh;
 }
 .about-text p {
   color: var(--text-muted);
@@ -377,9 +376,9 @@ nav .wrap {
   color: var(--turquoise);
   min-width: 64px;
 }
-@media (max-width: 760px) {
-  .about-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 767.98px) {
+  .about {
+    height: auto;
   }
 }
 
@@ -575,21 +574,23 @@ footer {
   color: var(--turquoise);
 }
 
-.page-hero {
+.page-hero,
+.page-header {
   padding: 72px 0 56px;
   border-top: none;
 }
-.page-hero .eyebrow {
+.page-hero .eyebrow,
+.page-header .eyebrow {
   margin-bottom: 14px;
 }
+.page-hero h1,
 .page-hero h1 {
   font-size: clamp(2rem, 4.4vw, 2.9rem);
-  max-width: 14ch;
 }
-.page-hero p {
+.page-hero p,
+.page-header p {
   color: var(--text-muted);
   max-width: 52ch;
-  margin-top: 16px;
   font-size: 1.02rem;
 }
 
@@ -638,7 +639,7 @@ footer {
 }
 @media (max-width: 991.98px) {
   .teasers {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
   .teaser-card {
@@ -647,8 +648,8 @@ footer {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
- .teasers {
-    grid-template-columns: repeat(6,1fr);
+  .teasers {
+    grid-template-columns: repeat(6, 1fr);
     gap: 15px;
   }
   .teaser-card {

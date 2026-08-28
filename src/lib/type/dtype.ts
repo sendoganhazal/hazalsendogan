@@ -31,3 +31,20 @@ export interface FindOutMoreType {
     eyebrow: string
     teasers: FindOutTeaser[]
 }
+
+export interface PageHeaderType {
+  backlink: NavLink;
+  eyebrow: string;
+  title:string
+}
+
+export interface Fact {
+  id:number,
+  tag: string,
+  text: string
+}
+
+export interface AboutHeroType {
+  text: string[],
+  facts: Fact[]
+}

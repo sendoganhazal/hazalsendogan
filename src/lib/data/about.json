@@ -1,0 +1,46 @@
+{
+   "pageHeading": {
+     "backlink": {
+        "url":"/",
+        "name":"Home"
+    },
+    "eyebrow":"About",
+    "title":"Frontend first. Full-stack on purpose."
+   },
+   "hero": {
+    "text": [
+        "I studied econometrics, not computer science. That background still shows up in how I work: I like data, patterns, and things that can be measured.",
+        "Somewhere along the way I fell into frontend development and never left. Eight years later, I've shipped public-facing platforms and internal tools alike, worked inside teams of 3 to 10 people, and picked up a habit of caring more about load times than anyone asked me to.",
+        "Right now I'm expanding into full-stack development with .NET Core and C# — partly for the career flexibility, partly because I just like understanding the whole system, not only the part rendered in the browser.",
+        "Outside of work, I'm a cat person (dog person too), a lifelong Fenerbahçe fan, and someone who's been curious about technology since childhood — long before it became a career. I'm also, slowly, teaching myself to draw."
+    ],
+    "facts": [
+        {
+            "id":0,
+            "tag":"BASE",
+            "text":"Istanbul, Turkey"
+        },
+        {
+            "id":1,
+            "tag":"FOCUS",
+            "text":"React · Next.js · TypeScript"
+        },
+        {
+            "id":2,
+            "tag":"GROWING",
+            "text":".NET Core Web API · C#"
+        },
+        {
+            "id":3,
+            "tag":"STUDIED",
+            "text":"Econometrics, MA; BA, Istanbul University"
+        },
+        {
+            "id":4,
+            "tag":"LANGS",
+            "text":"Turkish (native) · English (B1)"
+        }
+    ]
+   }
+
+}
